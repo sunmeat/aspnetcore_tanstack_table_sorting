@@ -429,7 +429,7 @@ table {
 
 th {
     text-align: left;
-    padding: 16px 22px;
+    padding: 16px 14px;
     font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -440,9 +440,10 @@ th {
 }
 
 td {
-    padding: 16px 22px;
+    padding: 16px 14px;
     border-bottom: 1px solid var(--border);
     font-size: 0.92rem;
+    vertical-align: middle;
 }
 
 tbody tr {
@@ -463,11 +464,19 @@ tbody tr {
     font-weight: 800;
     color: #fff;
     letter-spacing: -0.1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .team-name {
     color: var(--gold);
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
 }
 
 .coach {
@@ -478,25 +487,28 @@ tbody tr {
     display: inline-block;
     background: rgba(47, 123, 255, 0.16);
     color: var(--accent-light);
-    padding: 4px 12px;
+    padding: 4px 10px;
     border-radius: 999px;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     font-weight: 700;
     border: 1px solid rgba(47, 123, 255, 0.3);
+    white-space: nowrap;
 }
 
 .actions {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
 .icon-btn {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
     border-radius: var(--radius-sm);
     border: none;
     cursor: pointer;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
