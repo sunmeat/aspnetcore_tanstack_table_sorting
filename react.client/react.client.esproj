@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.6165494">
+
   <PropertyGroup>
     <StartupCommand>npm run dev</StartupCommand>
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
@@ -6,6 +7,7 @@
     <ShouldRunBuildScript>false</ShouldRunBuildScript>
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
     <LaunchBrowser>true</LaunchBrowser>
-    <LaunchUrl>http://localhost:3000</LaunchUrl>
+    <LaunchUrl>https://localhost:3000</LaunchUrl>
   </PropertyGroup>
+
 </Project>
